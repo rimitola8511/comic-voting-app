@@ -7,6 +7,13 @@ Nota: Los comics valorados se estan almacenando en el store de vuex, por que lo 
 _Estas instrucciones te permitirán obtener una copia del proyecto en funcionamiento en tu máquina local para propósitos de desarrollo y pruebas.
 
 ## Configuraciones del proyecto
+
+### Clonar el proyecto
+```
+git clone https://github.com/rimitola8511/comic-voting-app.git
+```
+
+### Descargar las dependecias necesarias
 ```
 npm install
 ```
