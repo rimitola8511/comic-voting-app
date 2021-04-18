@@ -1,12 +1,8 @@
 import { createStore } from 'vuex'
+import ComicModule from './modules/comic';
 
 export default createStore({
-  state: {
-  },
-  mutations: {
-  },
-  actions: {
-  },
   modules: {
+    ComicModule,
   }
-})
+});
