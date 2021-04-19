@@ -15,14 +15,14 @@
         @click="toPage(currentPage - 1)"
         :disabled="currentPage === 1"
       >
-        <font-awesome-icon class="fa-1x" :icon="['fas', 'chevron-left']" />
+        Prev <font-awesome-icon class="fa-1x" :icon="['fas', 'chevron-left']" />
       </button>
       <button 
         class="comic-voted-list__button" 
         @click="toPage(currentPage + 1)" 
         :disabled="currentPage === pagination.totalPages"
       >
-        <font-awesome-icon class="fa-1x" :icon="['fas', 'chevron-right']" />
+        Next <font-awesome-icon class="fa-1x" :icon="['fas', 'chevron-right']" />
       </button>
     </div>
     <alert v-if="!getVotedComic.length" :alertMessage="alertMessage" :alertType="alertType" />
@@ -55,7 +55,7 @@ export default {
       'votedComic'
     ]),
     getVotedComic () {
-      return this.votedComic.slice(1, this.votedComic.length)
+      return this.votedComic.slice(0, this.votedComic.length)
     },
     pagination () {
       let totalVotedComic = this.getVotedComic.length;

@@ -1,13 +1,13 @@
 <template>
   <div id="comic-pagination">
     <button class="button comic-pagination__prev" @click="subtractOneToComicNumber" :disabled="comicNumberToSearch === 1">
-      <font-awesome-icon class="fa-1sx" :icon="['fas', 'chevron-left']" />
+      <font-awesome-icon class="fa-1sx" :icon="['fas', 'chevron-left']" /> Prev
     </button>
     <button class="button comic-pagination__random" @click="getRandomComicNumber">
-      <font-awesome-icon class="fa-1x" :icon="['fas', 'random']" />
+      Random <font-awesome-icon class="fa-1x" :icon="['fas', 'random']" />
     </button>
     <button class="button comic-pagination__next" @click="addOneToComicNumber" :disabled="comicNumberToSearch === 2000">
-      <font-awesome-icon class="fa-1x" :icon="['fas', 'chevron-right']" />
+      Next <font-awesome-icon class="fa-1x" :icon="['fas', 'chevron-right']" />
     </button>
   </div>
 </template>
